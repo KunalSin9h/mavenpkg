@@ -7,8 +7,27 @@
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <name>GitHub Maven Demo</name>
+          <parent>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>2.1.3.RELEASE</version>
+                <relativePath />
+        </parent>
+	<dependencies>
+	              <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-data-jpa</artifactId>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-data-rest</artifactId>
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-hateoas</artifactId>
+                </dependency>
+	</dependencies>
   <description>Demo for GitHub Packages Maven registry</description>
-
   <distributionManagement>
     <repository>
       <id>github</id>
